@@ -8,7 +8,7 @@ const { secure } = require("./secure");
 const { startpage } = require("./startpage");
 
 const app = express();
-const port = 80;
+const port = process.env.PORT || 80;
 
 app.use(cookieParser());
 
