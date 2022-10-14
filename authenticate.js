@@ -14,7 +14,6 @@ async function authenticate(req, res) {
     fs.mkdirSync(folder, { recursive: true });
     fs.writeFileSync(folder + "/" + random + ".json", JSON.stringify(data));
 
-    console.log("Setting cookie");
     res.cookie("sessionCookie", random, {
       expires: new Date(Date.now() + 1900000),
     });

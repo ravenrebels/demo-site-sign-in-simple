@@ -7,7 +7,7 @@ async function startTheSigninProcess(req, res) {
       "Sign in to Demo site using Ravencoin NFT " + new Date()
     ).toString("base64"),
     endUserIp: "127.0.0.1",
-    redirectURL: req.protocol + "://" + req.headers.host + req.originalUrl,
+    redirectURL: req.get("Referer"),
   };
   const { data } = await axios.post(
     "https://idp.ravenrebels.com/rp/v5.1/sign",
