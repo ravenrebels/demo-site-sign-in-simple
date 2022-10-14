@@ -12,8 +12,11 @@ It uses the simple REDIRECT flow (no server side polling)
 ### Stuff to be aware of
 
 The authentication orders on `idp.ravenrebels.com` are short lived. They expire in minutes.
-So when the user is redirected back to your site, fetch the information and persist it
+So when the user is redirected back to your site, fetch the information and save it.
 
 Thats it, thats the demo.
 
 You can try this out live on https://simple-ravencoin-signin.herokuapp.com
+
+For more information about `idp.ravenrebels.com`check out the extended demo
+https://github.com/ravenrebels/demo-site-with-ravencoin-authentication
