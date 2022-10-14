@@ -4,6 +4,7 @@
   "description": "It uses the simple REDIRECT flow (no server side polling)",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
