@@ -1,0 +1,24 @@
+{
+  "name": "demo-site-sign-in-simple",
+  "version": "1.0.0",
+  "description": "It uses the simple REDIRECT flow (no server side polling)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravenrebels/demo-site-sign-in-simple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravenrebels/demo-site-sign-in-simple/issues"
+  },
+  "homepage": "https://github.com/ravenrebels/demo-site-sign-in-simple#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2"
+  }
+}
