@@ -16,4 +16,4 @@ So when the user is redirected back to your site, fetch the information and pers
 
 Thats it, thats the demo.
 
-You can try this out live on https:blablabla
+You can try this out live on https://simple-ravencoin-signin.herokuapp.com
