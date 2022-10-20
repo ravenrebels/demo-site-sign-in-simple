@@ -2,6 +2,20 @@
 
 It uses the simple REDIRECT flow (no server side polling)
 
+###
+Clone the GIT repository
+`git clone https://github.com/ravenrebels/demo-site-sign-in-simple.git`
+
+Change working directory
+`cd demo-site-sign-in-simple`
+
+Install dependencies
+`npm install`
+
+Run the server locally
+`node index` and visit http://localhost
+
+
 ### So what is going on?
 
 - When the user click Sign in, the web site requests an authentication order from `idp.ravenrebels.com`.
