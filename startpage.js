@@ -25,7 +25,13 @@ function startpage(_, res) {
                     <em>You can use any Ravencoin NFT</em>
                     <img id="image" src="https://cdn.pixabay.com/photo/2018/09/25/21/14/safe-3703193__480.jpg"/>
                     <a href="/signin" class="btn btn-primary" id="signIn">Sign in</a>
+                    <p style="margin-top: 20px">
+                    <a target="_blank" href="https://github.com/ravenrebels/demo-site-sign-in-simple"
+                      >GitHub</a
+                    >
+                  </p>
                     </div> 
+                    <p>
                   </body>
               </html>`;
   res.send(html);
