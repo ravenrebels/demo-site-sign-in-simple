@@ -6,6 +6,7 @@ const { startTheSigninProcess } = require("./startTheSigninProcess");
 const { authenticate } = require("./authenticate");
 const { secure } = require("./secure");
 const { startpage } = require("./startpage");
+const { getUserFromRequest } = require("./getUserFromRequest");
 
 const app = express();
 const port = process.env.PORT || 80;
@@ -35,6 +36,18 @@ app.get("/signout", function (req, res) {
   res.cookie("sessionCookie", null);
   res.redirect("/");
 });
+app.get("/whoami", function (request, response) {
+  const user = getUserFromRequest(request);
+
+  if (!user) {
+    response.status(204).send(); //204 means no content
+    return;
+  } else {
+    response.send(user);
+  }
+});
+
+app.use(express.static("static"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
