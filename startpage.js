@@ -22,6 +22,7 @@ function startpage(_, res) {
     
                     <div style="margin: auto; width: 350px; margin-top: 40px; " class="alert alert-success my-4" role="alert">
                     <h1>Sign in to unlock content</h1>  
+                    <em>You can use any Ravencoin NFT</em>
                     <img id="image" src="https://cdn.pixabay.com/photo/2018/09/25/21/14/safe-3703193__480.jpg"/>
                     <a href="/signin" class="btn btn-primary" id="signIn">Sign in</a>
                     </div> 

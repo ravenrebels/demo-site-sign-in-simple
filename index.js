@@ -29,8 +29,8 @@ app.get("/signin", async (req, res) => {
 });
 
 /* secure - when the user has signed in */
-app.get("/secure", secure);
 
+app.use("/secure", secure);
 /* well, sign out, clear the session cookie */
 app.get("/signout", function (req, res) {
   res.cookie("sessionCookie", null);
